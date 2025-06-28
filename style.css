@@ -15,10 +15,11 @@ body {
 
 .scene {
   position: relative;
-  height: 200vh; /* increased from 100vh */
+  height: 200vh;
   width: 100%;
   overflow: hidden;
 }
+
 
 .sticky-bg {
   background-size: cover;
@@ -36,11 +37,12 @@ body {
   z-index: 2;
   max-width: 800px;
   margin: 0 auto;
-  padding: 100vh 1rem 0; /* start halfway through the scene */
+  padding: 50vh 1rem 0; /* show text halfway down the section */
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 1rem;
 }
+
 
 
 .scroll-text h1, .scroll-text h2 {
