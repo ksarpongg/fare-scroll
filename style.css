@@ -32,10 +32,12 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black background */
+  color: white; /* make text white */
   padding: 2rem;
   border-radius: 12px;
 }
+
 
 
 .text-box h1, .text-box h2 {
