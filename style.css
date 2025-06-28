@@ -7,46 +7,47 @@
 }
 
 body {
+  font-family: 'PT Serif', serif;
   overflow-x: hidden;
-  max-width: 100vw;
+  background-color: black;
 }
 
+.scene {
+  position: relative;
+  height: 200vh; /* Enough height to allow scrolling */
+}
 
-.panel {
+.sticky-bg {
+  position: sticky;
+  top: 0;
   height: 100vh;
-  max-width: 100vw;
-  overflow-x: hidden;
-  background-size: cover; /* Important for sticky effect */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+  z-index: 1;
 }
 
-
-.text-box {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
+.scroll-text {
+  position: relative;
+  z-index: 2;
+  margin-top: 120vh;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
   color: white;
-  padding: 1.5rem;
-  border-radius: 12px;
+  padding: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
 }
 
-
-
-.text-box h1, .text-box h2 {
-  font-size: 2.5rem;
+.scroll-text h1, .scroll-text h2 {
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
-.text-box p {
-  font-size: 1.3rem;
+.scroll-text p {
+  font-size: 1.25rem;
   line-height: 1.6;
 }
 
@@ -57,7 +58,7 @@ body {
   font-style: italic;
   max-width: 600px;
   text-align: center;
-  animation: fadeIn 1.5s ease-in-out;
+  margin: 0 auto;
 }
 
 .quote-box span {
@@ -66,9 +67,4 @@ body {
   font-size: 1rem;
   font-style: normal;
   color: #ffcc00;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
 }
