@@ -37,7 +37,7 @@ body {
   z-index: 2;
   max-width: 800px;
   margin: 0 auto;
-  padding: 50vh 1rem 0; /* show text halfway down the section */
+  padding: 50vh 1rem 0; /* ensures the text scrolls into view */
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 1rem;
